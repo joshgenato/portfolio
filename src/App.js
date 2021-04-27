@@ -24,7 +24,7 @@ function App() {
 	return (
 		<Fragment>
 			<ThemeProvider theme={Theme}>
-				<Router>
+				<Router basename={'portfolio'}>
 					<Container fixed>
 						<Switch>
 							<Route exact path='/' component={Home} />

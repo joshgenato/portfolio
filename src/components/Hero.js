@@ -25,12 +25,24 @@ const useStyles = makeStyles((theme) => ({
 		left: 0,
 		backgroundColor: 'rgba(0,0,0,.7)',
 	},
-	mainFeaturedPostContent: {
+	heroContent: {
 		position: 'relative',
 		padding: theme.spacing(10),
 		[theme.breakpoints.up('md')]: {
 			padding: theme.spacing(25),
 			paddingRight: 0,
+		},
+		[theme.breakpoints.down('sm')]: {
+			paddingTop: theme.spacing(30),
+			paddingLeft: theme.spacing(15),
+			paddingRight: theme.spacing(10),
+			height: '25rem',
+		},
+		[theme.breakpoints.down('xs')]: {
+			paddingTop: theme.spacing(20),
+			paddingLeft: theme.spacing(10),
+			paddingRight: theme.spacing(10),
+			height: '25rem',
 		},
 	},
 }));
@@ -53,7 +65,7 @@ export default function Hero(props) {
 			<div className={classes.overlay} />
 			<Grid container>
 				<Grid item md={6}>
-					<div className={classes.mainFeaturedPostContent}>
+					<div className={classes.heroContent}>
 						<Typography
 							component='h1'
 							variant='h5'
