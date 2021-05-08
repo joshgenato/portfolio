@@ -47,11 +47,20 @@ const Header = () => {
 					<Button color='inherit' className={classes.menuButton}>
 						Home
 					</Button>
-					<Button color='inherit' className={classes.menuButton}>
+					<Button
+						href='#WorkHistory'
+						color='inherit'
+						className={classes.menuButton}>
 						Work
 					</Button>
-					<Button color='inherit' className={classes.menuButton}>
-						About
+					<Button href='#Skills' color='inherit' className={classes.menuButton}>
+						Skills
+					</Button>
+					<Button
+						href='#Projects'
+						color='inherit'
+						className={classes.menuButton}>
+						Projects
 					</Button>
 				</Toolbar>
 			</AppBar>

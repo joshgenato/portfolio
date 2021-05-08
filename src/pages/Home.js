@@ -18,9 +18,15 @@ const Home = () => {
 		<Fragment>
 			<Header />
 			<Hero post={mainFeaturedPost} />
-			<WorkHistory />
-			<Skills />
-			<Projects />
+			<div id='WorkHistory'>
+				<WorkHistory />
+			</div>
+			<div id='Skills'>
+				<Skills />
+			</div>
+			<div id='Projects'>
+				<Projects />
+			</div>
 		</Fragment>
 	);
 };

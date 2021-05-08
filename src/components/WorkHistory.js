@@ -33,7 +33,7 @@ const WorkHistory = () => {
 			<Timeline align='alternate'>
 				<VizSensor
 					onChange={(isVisible) => {
-						setActive(isVisible);
+						active === false ? setActive(isVisible) : setActive(true);
 					}}>
 					<TimelineItem>
 						<TimelineOppositeContent>

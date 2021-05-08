@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import netflix from '../assets/projects/netflix.png';
-
+import covidTracker from '../assets/projects/covid-tracker.png';
 const images = [
 	{
 		url: netflix,
@@ -11,31 +11,12 @@ const images = [
 		width: '30%',
 		redirect: 'https://netflix-clone-29da7.web.app/',
 	},
-	// {
-	// 	url: '/static/images/grid-list/burgers.jpg',
-	// 	title: 'Burgers',
-	// 	width: '30%',
-	// },
-	// {
-	// 	url: '/static/images/grid-list/camera.jpg',
-	// 	title: 'Camera',
-	// 	width: '30%',
-	// },
-	// {
-	// 	url: '/static/images/grid-list/breakfast.jpg',
-	// 	title: 'Breakfast',
-	// 	width: '30%',
-	// },
-	// {
-	// 	url: '/static/images/grid-list/burgers.jpg',
-	// 	title: 'Burgers',
-	// 	width: '30%',
-	// },
-	// {
-	// 	url: '/static/images/grid-list/camera.jpg',
-	// 	title: 'Camera',
-	// 	width: '30%',
-	// },
+	{
+		url: covidTracker,
+		title: 'CovidTracker',
+		width: '30%',
+		redirect: 'https://joshgenato.github.io/covid-tracker/',
+	},
 ];
 
 const useStyles = makeStyles((theme) => ({
